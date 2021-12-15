@@ -47,7 +47,7 @@ $sql = "SELECT Population
 FROM city WHERE Name = ?";
 
 $stmt = $mysqli->prepare($sql);
-$stmt->bind_param("s", $_GET['q']);
+$stmt->bind_param("s", $_POST['q']);
 $stmt->execute();
 $stmt->store_result();
 $stmt->bind_result($poblacion);

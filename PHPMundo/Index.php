@@ -15,7 +15,7 @@
     <h1>Mundo database</h1>
 
     <p>Selecciona la ciudad</p>
-    <form action="Index.php" method="GET">
+    <form action="Index.php" method="POST">
     <select name="pais" id="pais" onchange="numHabit(this.value)">
         <option value="">Selecciona la ciudad...</option>
         <?php

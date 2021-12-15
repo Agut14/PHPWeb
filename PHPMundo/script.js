@@ -12,8 +12,9 @@ function numHabit(str){
         }
     };
 
-    xhttp.open("GET", "getHabitantes.php?q=" + str, true);
-    xhttp.send();    
+    xhttp.open("POST", "getHabitantes.php");
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhttp.send("q=" + str); 
 }
 
 
