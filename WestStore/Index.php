@@ -36,12 +36,9 @@
             //Si se ha rellenado el formulario, comprobamos que el usuario sea correcto mediante la función validarUsuario.
             if (isset($_POST["nombreUsuario"]) && isset($_POST["acceder"]) ) {
                     validarUsuario($_POST["nombreUsuario"], $_POST["email"]);
-                    
                 }
 
-            if (isset($_COOKIE["Usuario"])){
-                tipoUsuario($_COOKIE["Usuario"]);
-            }    
+            
 
 
                 ?>

@@ -58,6 +58,9 @@
 			if($fila["Email"] === $email){
 					echo "<p class='col-12 text-center mt-2'>Bienvenido " . $usuario . ", pulsa  <a class='enlaceLogin' href='Acceso.php'> AQUÍ </a>  para continuar.</p>";
 					setcookie("Usuario", $_POST["nombreUsuario"], time()+3600);
+					if (isset($_COOKIE["Usuario"])){
+                        tipoUsuario($_COOKIE["Usuario"]);
+                    }    
 					session_start();
         			$_SESSION["Usuario"] = $usuario;
 					return $result;	
