@@ -11,8 +11,7 @@ while(!feof($archivo)){
     $contenido = fgets($archivo);
     echo $contenido;
 }
-$contenido = fgets($archivo);
-echo $contenido;
+
 
 //Escribir en archivo
 fwrite($archivo, " Texto desde PHP");
