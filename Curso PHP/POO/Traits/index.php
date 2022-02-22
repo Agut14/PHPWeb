@@ -1,6 +1,6 @@
 <?php
 
-trait Utilidades{
+/*trait Utilidades{
     public function mostrarNombre(){
         echo "<h1>El nombre es ".$this->nombre."</h1>";
     }
@@ -30,6 +30,6 @@ $audi = new Vehiculo();
 $persona2 = new Persona();
 //$audi->mostrarNombre();
 $persona2->mostrarNombre();
-
+*/
 
 ?>

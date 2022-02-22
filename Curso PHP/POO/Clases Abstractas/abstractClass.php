@@ -1,6 +1,6 @@
 <?php
 
-abstract class Ordenador{
+/*abstract class Ordenador{
     protected $encendido;
 
     abstract public function encender();
@@ -26,5 +26,6 @@ class Asus extends Ordenador{
     }
 }
 
+*/
 
 ?>

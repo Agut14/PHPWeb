@@ -1,6 +1,6 @@
 <?php
 
-class Coche{
+/*class Coche{
     public static $color;
     public static $modelo;
     
@@ -20,5 +20,6 @@ class Coche{
         self::$modelo = $modelo;
     }
 }
+*/
 
 ?>
