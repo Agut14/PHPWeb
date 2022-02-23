@@ -8,8 +8,7 @@
 </head>
 <body>
     <?php 
-        require_once "controller/Usuario.php";
-        require_once "controller/Nota.php";
+        require_once 'autoload.php';
 
         if(isset($_GET['controller'])){
             $nombreControlador = $_GET['controller']. 'Controller';
