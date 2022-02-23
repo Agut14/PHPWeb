@@ -34,4 +34,11 @@ var_dump($carlosAdmin->userAdmin);
 $carlos = new Principal();
 var_dump($carlos->usuario);
 
+
+//Comprobar si existe una clase
+
+if(class_exists('PanelAdmin\Usuario')){
+    echo "La clase existe";
+}
+
 ?>
