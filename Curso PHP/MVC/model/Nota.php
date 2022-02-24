@@ -6,7 +6,10 @@ class Nota extends ModeloBase{
     public $nombre;
     public $contenido;
 
-    
+    public function __construct()
+    {
+        parent::__construct();
+    }
 
     /**
      * Get the value of nombre

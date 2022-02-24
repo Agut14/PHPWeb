@@ -1,8 +1,19 @@
 <?php
 
+require_once "config/database.php";
+
 class ModeloBase{
-    public function getAll(){
-        return "Sacando todos los usuarios";
+
+    public $db;
+
+    public function __construct()
+    {   
+        $this->db = database::conectar();
+    }
+
+    public function getAll($tabla){
+        $query = $this->db->query("SELECT * FROM $tabla ORDER BY id DESC");
+        return $query;
     }
 }
 

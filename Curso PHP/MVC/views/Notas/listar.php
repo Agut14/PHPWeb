@@ -9,5 +9,9 @@
 <body>
     <h2><?=$nota->getNombre();?></h2>
     <h2><?=$nota->getContenido();?></h2>
+    <h1>Listado de notas</h1>
+    <?php while($nota1 = $notas->fetch_object()):?>
+    <?= $nota1->titulo;?> - <?= $nota1->fecha;?>
+    <?php endwhile; ?>
 </body>
 </html>

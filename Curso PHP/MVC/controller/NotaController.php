@@ -8,11 +8,15 @@ class NotaController{
         $nota = new Nota();
         $nota->setNombre("Hola Mundo");
         $nota->setContenido("Hola Mundo desde PHP");
+        $notas = $nota->getAll("notas");
         //Vista
         require_once "views/Notas/listar.php";
 
 
     }
+
+    
+
     public function crear(){
 
     }
