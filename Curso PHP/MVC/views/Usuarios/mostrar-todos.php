@@ -7,7 +7,10 @@
     <title>MVC</title>
 </head>
 <body>
-    <h1><?=$todosLosUsuarios ?></h1>
+    <h1>Todos los usuarios!</h1>
+    <?php while($allusuarios = $todosLosUsuarios->fetch_object()): ?>
+    <?=$allusuarios->nombre ?> - <?=$allusuarios->apellidos?> - <?=$allusuarios->email?></br>
+    <?php endwhile; ?>
     
 </body>
 </html>

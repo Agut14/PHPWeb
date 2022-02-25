@@ -94,6 +94,8 @@ class Usuario extends ModeloBase{
         return $this;
     }
 
+    
+
 }
 
 ?>
