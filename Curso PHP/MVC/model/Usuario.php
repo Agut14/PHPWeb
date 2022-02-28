@@ -94,7 +94,10 @@ class Usuario extends ModeloBase{
         return $this;
     }
 
-    
+    public function insertar($name, $lastname, $email){
+        $query = $this->db->query("INSERT INTO usuarios (nombre, apellidos,email) VALUES ('$name', '$lastname', '$email')");
+        return $query;
+    }
 
 }
 

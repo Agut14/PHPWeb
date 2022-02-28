@@ -16,10 +16,6 @@ class ModeloBase{
         return $query;
     }
 
-    public function insertar($name, $lastname, $email){
-        $query = $this->db->query("INSERT INTO usuarios (nombre, apellidos,email) VALUES ('$name', '$lastname', '$email')");
-        return $query;
-    }
 }
 
 
